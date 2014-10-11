@@ -7,44 +7,44 @@ $(document).ready(function () {
     $("#tri").hide();
     $("#pnc").hide();
 
-    $(".alg").click(function () {
+    $(".alg").fastClick(function () {
         $("#menu").hide();
         $("#alg").show();
     });
-    $(".log").click(function () {
+    $(".log").fastClick(function () {
         $("#menu").hide();
         $("#log").show();
     });
-    $(".pow").click(function () {
+    $(".pow").fastClick(function () {
         $("#menu").hide();
         $("#pow").show();
     });
-    $(".tri").click(function () {
+    $(".tri").fastClick(function () {
         $("#menu").hide();
         $("#tri").show();
     });
-    $(".pnc").click(function () {
+    $(".pnc").fastClick(function () {
         $("#menu").hide();
         $("#pnc").show();
     });
 
-    $(".algtomenu").click(function () {
+    $(".algtomenu").fastClick(function () {
         $("#alg").hide();
         $("#menu").show();
     });
-    $(".logtomenu").click(function () {
+    $(".logtomenu").fastClick(function () {
         $("#log").hide();
         $("#menu").show();
     });
-    $(".powtomenu").click(function () {
+    $(".powtomenu").fastClick(function () {
         $("#pow").hide();
         $("#menu").show();
     });
-    $(".tritomenu").click(function () {
+    $(".tritomenu").fastClick(function () {
         $("#tri").hide();
         $("#menu").show();
     });
-    $(".pnctomenu").click(function () {
+    $(".pnctomenu").fastClick(function () {
         $("#pnc").hide();
         $("#menu").show();
     });
@@ -100,7 +100,7 @@ $(document).ready(function () {
         return ((Math.PI / 180) * deg);
     }
 
-    $("#per").click(function () {
+    $("#per").fastClick(function () {
 
         var n = Get("#n", true);
         var r = Get("#r", true);
@@ -114,7 +114,7 @@ $(document).ready(function () {
 
     });
 
-    $("#com").click(function () {
+    $("#com").fastClick(function () {
 
         var n = Get("#n", true);
         var r = Get("#r", true);
@@ -128,7 +128,7 @@ $(document).ready(function () {
 
     });
 
-    $("#sin").click(function () {
+    $("#sin").fastClick(function () {
         var angle = Get("#angle", false);
         if (angle === undefined) {
             $("#triresult").text("Syntax Error");
@@ -137,7 +137,7 @@ $(document).ready(function () {
         }
     });
 
-    $("#cos").click(function () {
+    $("#cos").fastClick(function () {
         var angle = Get("#angle", false);
         if (angle === undefined) {
             $("#triresult").text("Syntax Error");
@@ -146,7 +146,7 @@ $(document).ready(function () {
         }
     });
 
-    $("#tan").click(function () {
+    $("#tan").fastClick(function () {
         var angle = Get("#angle", false);
         if (angle === undefined) {
             $("#triresult").text("Syntax Error");
@@ -155,7 +155,7 @@ $(document).ready(function () {
         }
     });
 
-    $("#tothe").click(function () {
+    $("#tothe").fastClick(function () {
 
         var base = Get("#base", false);
         var power = Get("#power", false);
@@ -168,7 +168,7 @@ $(document).ready(function () {
 
     });
 
-    $("#log10").click(function () {
+    $("#log10").fastClick(function () {
         var logv = Get("#vlog", false);
         if (logv === undefined) {
             $("#logresult").text("Syntax Error");
@@ -176,7 +176,7 @@ $(document).ready(function () {
             $("#logresult").text("= " + decimalFix(Math.log(logv) / Math.LN10));
         }
     });
-    $("#ln").click(function () {
+    $("#ln").fastClick(function () {
         var logv = Get("#vlog", false);
         if (logv === undefined) {
             $("#logresult").text("Syntax Error");
@@ -185,7 +185,7 @@ $(document).ready(function () {
         }
     });
 
-    $("#plus").click(function () {
+    $("#plus").fastClick(function () {
 
         var first = Get("#first", false);
         var second = Get("#second", false);
@@ -197,7 +197,7 @@ $(document).ready(function () {
         }
 
     });
-    $("#minus").click(function () {
+    $("#minus").fastClick(function () {
 
         var first = Get("#first", false);
         var second = Get("#second", false);
@@ -209,7 +209,7 @@ $(document).ready(function () {
         }
 
     });
-    $("#times").click(function () {
+    $("#times").fastClick(function () {
 
         var first = Get("#first", false);
         var second = Get("#second", false);
@@ -221,7 +221,7 @@ $(document).ready(function () {
         }
 
     });
-    $("#divide").click(function () {
+    $("#divide").fastClick(function () {
 
         var first = Get("#first", false);
         var second = Get("#second", false);
@@ -233,7 +233,7 @@ $(document).ready(function () {
         }
 
     });
-    $("#remainder").click(function () {
+    $("#remainder").fastClick(function () {
 
         var first = Get("#first", false);
         var second = Get("#second", false);
